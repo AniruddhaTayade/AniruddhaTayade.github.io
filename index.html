@@ -1933,6 +1933,82 @@ function injectContent() {
 
   <div class="project-chest reveal">
     <div class="chest-lid">
+      <span class="chest-icon">⚡</span>
+      <span class="chest-name">Flaky</span>
+      <span class="chest-lock">🔒</span>
+    </div>
+    <div class="chest-body">
+      <div style="font-size:0.65rem;font-family:var(--font-ui);font-weight:700;color:var(--gold);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:6px">⚔ LEGENDARY</div>
+      <p class="chest-desc">
+        AI-powered E2E test generator — paste a URL or upload a screenshot, Flaky generates and
+        executes Playwright/pytest tests in a sandboxed environment and returns a full HTML report.
+        Frontend live on Vercel; full stack on GitHub.
+      </p>
+      <div class="chest-tags">
+        <span class="chest-tag">React + Vite</span>
+        <span class="chest-tag">FastAPI</span>
+        <span class="chest-tag">Celery</span>
+        <span class="chest-tag">Qwen3 Coder</span>
+        <span class="chest-tag">Gemini Vision</span>
+        <span class="chest-tag">Azure Container Apps</span>
+        <span class="chest-tag">Neon Postgres</span>
+        <span class="chest-tag">GitHub Actions</span>
+      </div>
+      <div class="chest-links">
+        <a href="https://github.com/AniruddhaTayade/flaky-ui" target="_blank" class="chest-link">⚙ Frontend</a>
+        <a href="https://github.com/AniruddhaTayade/flaky-api" target="_blank" class="chest-link">⚙ Backend</a>
+        <a href="https://flaky-ui.vercel.app" target="_blank" class="chest-link">🌐 Live UI</a>
+      </div>
+    </div>
+    <div class="chest-loot">
+      <div class="loot-title">⚔ Technical Details</div>
+      <div class="loot-item"><span class="loot-gem">💎</span>LLM: Qwen3 Coder via OpenRouter generates pytest/Playwright tests; Gemini handles screenshot vision input</div>
+      <div class="loot-item"><span class="loot-gem">💎</span>Sandboxed execution via Azure Container Instances — each test run is fully isolated</div>
+      <div class="loot-item"><span class="loot-gem">💎</span>Async job pipeline: FastAPI → Celery worker → Upstash Redis (job state) → Neon Postgres (history)</div>
+      <div class="loot-item"><span class="loot-gem">💎</span>HTML test reports stored on Azure Blob Storage and streamed back to frontend</div>
+      <div class="loot-item"><span class="loot-gem">💎</span>Full CI/CD via GitHub Actions; API deployed on Azure Container Apps</div>
+      <div class="loot-item"><span class="loot-gem">💎</span>Self-aware naming — "Flaky" is a QA term for non-deterministic tests</div>
+    </div>
+  </div>
+
+  <div class="project-chest reveal" style="animation-delay:0.05s">
+    <div class="chest-lid">
+      <span class="chest-icon">🧮</span>
+      <span class="chest-name">EWLR</span>
+      <span class="chest-lock">🔒</span>
+    </div>
+    <div class="chest-body">
+      <div style="font-size:0.65rem;font-family:var(--font-ui);font-weight:700;color:var(--purple);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:6px">✦ EPIC</div>
+      <p class="chest-desc">
+        Novel adaptive data structure (Entropy-Weighted Lazy Restructuring) that restructures only
+        regions that are simultaneously hot and disordered — reducing restructuring operations by
+        99.4% vs RB Trees. arXiv paper submitted to cs.DS.
+      </p>
+      <div class="chest-tags">
+        <span class="chest-tag">C</span>
+        <span class="chest-tag">pthreads</span>
+        <span class="chest-tag">Lock-free reads</span>
+        <span class="chest-tag">Bayesian cold start</span>
+        <span class="chest-tag">S&P 500 dataset</span>
+        <span class="chest-tag">arXiv cs.DS</span>
+      </div>
+      <div class="chest-links">
+        <a href="https://github.com/AniruddhaTayade/ewlr" target="_blank" class="chest-link">⚙ GitHub</a>
+      </div>
+    </div>
+    <div class="chest-loot">
+      <div class="loot-title">⚔ Technical Details</div>
+      <div class="loot-item"><span class="loot-gem">💎</span>Core predicate: restructure(B) iff H(B) × E(B) > τ — first structure to combine heat AND entropy simultaneously</div>
+      <div class="loot-item"><span class="loot-gem">💎</span>99.4% fewer restructures vs RB Tree; 90–95% fewer vs ALEX learned index on real S&P 500 data (30 runs)</div>
+      <div class="loot-item"><span class="loot-gem">💎</span>O(log n) insert/search/delete via bucket index — 31.58× speedup over O(n) baseline at 200k ops</div>
+      <div class="loot-item"><span class="loot-gem">💎</span>Formal cost model: EWLR wins total system cost vs RB Tree at any storage cost (R* = −0.69 μs)</div>
+      <div class="loot-item"><span class="loot-gem">💎</span>Bayesian cold start via Dirichlet-Multinomial inference — pre-warms buckets before first query</div>
+      <div class="loot-item"><span class="loot-gem">💎</span>Lock-free read path with per-bucket mutex; validated under 10 concurrent threads</div>
+    </div>
+  </div>
+
+  <div class="project-chest reveal">
+    <div class="chest-lid">
       <span class="chest-icon">🤖</span>
       <span class="chest-name">QA Agent</span>
       <span class="chest-lock">🔒</span>
